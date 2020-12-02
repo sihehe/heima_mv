@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--模态窗口-->
+<div class="tab-pane" id="tab-model">
+
+    <div id="myModal" class="modal modal-primary" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">用户信息</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="box-body">
+                        <div class="form-horizontal">
+
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyNum">编号:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="edit_classifyNum" placeholder="编号" name="classifyNum">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyName">项目名称:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="edit_classifyName" placeholder="项目名称" name="classifyName">
+                                </div>
+                            </div>
+
+                            <%--<div class="col-md-2 title">创建时间</div>
+                            <div class="col-md-4 data">
+                                <div class="input-group date">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input type="text" class="form-control pull-right"
+                                           id="datepicker-a3" name="classifyTime">
+                                </div>
+                            </div>--%>
+
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyTime">创建时间:</label>
+                                <div class="col-sm-5">
+                                    <div class="input-group date">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </div>
+                                        <input type="text" class="form-control pull-right"
+                                               id="edit_classifyTime" name="classifyTime" placeholder="创建时间">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyPath">服务范围:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="edit_classifyPath" placeholder="服务范围" name="classifyPath">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyPrice">服务起价:</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="edit_classifyPrice" placeholder="服务起价" name="classifyPrice">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyDesc">项目描述:</label>
+                                <div class="col-sm-5">
+																	<textarea class="form-control" rows="3" placeholder="项目描述" id="edit_classifyDesc"
+                                                                              name="classifyDesc"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label" for="edit_classifyStatus">状态:</label>
+                                <div class="col-sm-5">
+                                    <select class="form-control select2" style="width: 100%"  id="edit_classifyStatus"
+                                            name="classifyStatus">
+                                        <option value="0" selected="selected">暂停</option>
+                                        <option value="1">运营</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <%--<div class="col-md-2 title">项目状态</div>
+                            <div class="col-md-4 data">
+                                <select class="form-control select2" style="width: 100%"
+                                        name="classifyStatus">
+                                    <option value="0" selected="selected">暂停</option>
+                                    <option value="1">运营</option>
+                                </select>
+                            </div>--%>
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-outline" data-dismiss="modal" onclick="updateClassify()">修改</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</div>
+<!--模态窗口/-->
+</body>
+</html>
